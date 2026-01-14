@@ -1,5 +1,6 @@
 checkpoints.zip # deprecated
 data/ # why dis?
+data
 venv # nah get outta here
 venv/
 # "idk trust me bro this is gitignore syntax"
