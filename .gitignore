@@ -9,3 +9,6 @@ checkpoints/
 .DS_Store
 */.DS_Store
 __pycache__/
+model/ # build it urself bro
+model
+*model* # thiS iS a vERY inTERstTING giTIgnore

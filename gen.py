@@ -8,7 +8,7 @@ with open("config.yaml", "r") as f:
     config = RobertaConfig.from_dict(yaml.safe_load(f)["model_config"])
 
 model = RobertaForMaskedLM(config)
-model.load_weights("checkpoints/model_epoch_8.npz")
+model.load_weights("latest_model/model_epoch_8.npz")
 tokenizer = PreTrainedTokenizerFast.from_pretrained(
     "tokenizer",
     unk_token="[UNK]",

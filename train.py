@@ -212,10 +212,10 @@ def train(args):
         
         # Save checkpoint
         if (epoch + 1) % save_interval == 0:
-            model.save_weights(os.path.join(args.output_dir, f"model_epoch_{epoch+1}.npz"))
+            model.save_weights(os.path.join(args.output_dir, f"model_epoch_{epoch+1}.safetensors"))
 
     print("Training complete.")
-    model.save_weights(os.path.join(args.output_dir, "model_final.npz"))
+    model.save_weights(os.path.join(args.output_dir, "model_final.safetensors"))
 
 def tree_flatten(tree):
     if isinstance(tree, (list, tuple)):

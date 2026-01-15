@@ -6,6 +6,6 @@
   "model_max_length": 512,
   "pad_token": "[PAD]",
   "sep_token": "[SEP]",
-  "tokenizer_class": "TokenizersBackend",
+  "tokenizer_class": "PreTrainedTokenizerFast",
   "unk_token": "[UNK]"
 }
