@@ -1,0 +1,13 @@
+{
+  "additional_special_tokens": null,
+  "backend": "tokenizers",
+  "cls_token": "[CLS]",
+  "extra_special_tokens": [],
+  "is_local": true,
+  "mask_token": "[MASK]",
+  "model_max_length": 512,
+  "pad_token": "[PAD]",
+  "sep_token": "[SEP]",
+  "tokenizer_class": "TokenizersBackend",
+  "unk_token": "[UNK]"
+}

@@ -9,7 +9,10 @@ print(f"✓ Model loaded: {model.num_parameters():,} parameters")
 print(f"✓ Tokenizer vocab: {tokenizer.vocab_size}")
 
 # Test
-prompt = "A dog is a [MASK] animal."
+prompt = """
+Saline, also known as saline solution, is a mixture of sodium chloride in water and has a number of uses in medicine. Applied to the affected area it is used to clean wounds, help remove contact lenses, and help with dry eyes. By injection into a vein it is used to treat dehydration such as from gastroenteritis and diabetic ketoacidosis. It is also used to dilute other medications to be given by injection.
+The question "is saline and sodium chloride the same thing" can be answered either 'true' or 'false', and the answer is [MASK].
+"""
 print(f"\nPrompt: {prompt}")
 
 inputs = tokenizer(prompt, return_tensors="pt")
